@@ -17,7 +17,7 @@ autocmd BufRead,BufNewFile *.tsv setlocal tabstop=10 shiftwidth=10 softtabstop=1
 
 
 "set the tex files to wrap.
-autocmd BufRead,BufNewFile *.tex setlocal wrap
+autocmd BufRead,BufNewFile *.tex setlocal breakindent ruler
 set ruler
 
 " Disable parentheses matching depends on system. This way we should address all cases (?)
