@@ -15,9 +15,10 @@ autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabs
 "set the tab values for tsv files to 10.
 autocmd BufRead,BufNewFile *.tsv setlocal tabstop=10 shiftwidth=10 softtabstop=10 noexpandtab
 
+autocmd BufRead,BufNewFile *.md setlocal spell
 
 "set the tex files to wrap.
-autocmd BufRead,BufNewFile *.tex setlocal breakindent ruler
+autocmd BufRead,BufNewFile *.tex setlocal breakindent number
 set ruler
 
 " Disable parentheses matching depends on system. This way we should address all cases (?)
