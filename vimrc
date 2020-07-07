@@ -12,10 +12,11 @@ set expandtab
 "autocmds get processed when the specified events occur for the specified file name patterns. Here we just set the tab values for the current buffer to the desired value in the event of reading or creating a file with .htm or .html extension.
 autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
-"set the tab values for tsv files to 10.
+"set the tab size for tsv files to 10.
 autocmd BufRead,BufNewFile *.tsv setlocal tabstop=10 shiftwidth=10 softtabstop=10 noexpandtab
 
-autocmd BufRead,BufNewFile *.md setlocal spell
+"set spell check on for markdown and text files
+autocmd BufRead,BufNewFile *.md,*.txt setlocal spell
 
 "set the tex files to wrap.
 autocmd BufRead,BufNewFile *.tex setlocal breakindent number
