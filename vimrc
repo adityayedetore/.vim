@@ -18,9 +18,9 @@ autocmd BufRead,BufNewFile *.tsv setlocal tabstop=10 shiftwidth=10 softtabstop=1
 "set spell check on for markdown and text files
 autocmd BufRead,BufNewFile *.md,*.txt setlocal spell
 
-"set the tex files to wrap.
-autocmd BufRead,BufNewFile *.tex setlocal breakindent number
+"set the tex files to wrap and check spelling
+autocmd BufRead,BufNewFile *.tex setlocal breakindent number spell
 set ruler
 
-" Disable parentheses matching depends on system. This way we should address all cases (?)
+" Disable parentheses matching 
 set noshowmatch
