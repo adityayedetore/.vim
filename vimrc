@@ -11,7 +11,7 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 "autocmds get processed when the specified events occur for the specified file name patterns. Here we just set the tab values for the current buffer to the desired value in the event of reading or creating a file with .htm .html .css or .js extensions.
-autocmd BufRead,BufNewFile *.htm,*.html,*.css,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd BufRead,BufNewFile *.htm,*.html,*.css,*.js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 "set the tab size for tsv files to 10.
 autocmd BufRead,BufNewFile *.tsv setlocal tabstop=10 shiftwidth=10 softtabstop=10 noexpandtab
