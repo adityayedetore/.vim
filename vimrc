@@ -17,7 +17,7 @@ autocmd BufRead,BufNewFile *.htm,*.html,*.css,*.js setlocal tabstop=2 shiftwidth
 autocmd BufRead,BufNewFile *.tsv setlocal tabstop=10 shiftwidth=10 softtabstop=10 noexpandtab
 
 "set spell check on for markdown and text files
-autocmd BufRead,BufNewFile *.md,*.txt setlocal spell breakindent
+autocmd BufRead,BufNewFile *.md,*.txt setlocal spell breakindent smartindent
 
 "set the tex files to wrap and check spelling
 autocmd BufRead,BufNewFile *.tex setlocal breakindent number spell
